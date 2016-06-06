@@ -11,9 +11,6 @@ public class Principal {
         Metodos objMetodos = new Metodos ();
         objMetodos.condicion(dig);
         
-        if (dig <= 0) {
-            System.out.println("Ingrese como parámetro, un numero de digitos correcto (mayor que 0): ");
-        }
         for (int i = 1; i <= 99999; i++) {
             int aux = i;
 
