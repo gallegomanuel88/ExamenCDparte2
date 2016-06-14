@@ -7,17 +7,24 @@ package examenfinalparte2;
 
 
 public class Metodos {
-    
+    public static boolean p = false;
+    static int dig = 2;
+    static int ndig = 0;
     /**
      * Saca un mensaje por pantalla si el valor es 0 o negativo.
-     * @param valor recive un valor int
      */
-    public void condicion (int valor){
-        if (valor <= 0) {
+    public void condicion (){
+        if (dig <= 0) {
             System.out.println("Ingrese como parámetro, un numero de digitos correcto (mayor que 0): ");
         }
     }
-    public void operacion (int dig, int ndig, boolean p) {
+    /**
+     * 
+     * @param dig Recibe un valor int
+     * @param ndig Recibe un valor int
+     * @param p Recibe un valor boolean
+     */
+    public void operacion () {
         for (int i = 1; i <= 99999; i++) {
             int aux = i;
 
