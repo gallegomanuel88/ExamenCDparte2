@@ -39,13 +39,7 @@ public class Metodos {
         for (int numeroAcomparar = 1; numeroAcomparar <= 99999; numeroAcomparar++) {
             int aux = numeroAcomparar;
             
-            //Comprueba el numero de divisiones enteras que tiene "aux". 
-            int contador = 0;
-            while (aux != 0) {
-                aux = aux / 10;
-                contador++;
-            }
-            ndig = contador;
+            ndig = divisionEntera(numeroAcomparar);
             System.out.println(ndig+" ndig");
             
             //Comprueba si el digito y su numero de cifras es igual.
@@ -90,5 +84,18 @@ public class Metodos {
             }
         }
     }
-    
+    /**
+     * Comprueba el numero de divisiones enteras que tiene "numAComparar". 
+     * @param numAcomparar numero que vamos a comprobar su numero de divisiones enteras.
+     * @return numero de divisiones enteras.
+     */
+    private static int divisionEntera(int numAcomparar) {
+        int aux = numAcomparar;
+        int contador = 0;
+        while (aux != 0) {
+            aux = aux / 10;
+            contador++;
+        }
+        return contador;
+    }
 }
